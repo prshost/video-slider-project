@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'vazie';
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.ttf')  format('truetype'),
+         url('../fonts/vazir.woff2') format('woff2'),
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body{
+      font-family: 'vazir';
+     direction: rtl;
+      position: relative;
+      background: #506869;
+  }
+
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .btn {
+    width: 8rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 18px;
+    transition: .3s;
+  }
+  .btn-succes {
+    background-color: rgb(21, 180, 212);
+  }
+  .btn-succes:hover {
+    background-color: rgba(21, 180, 212, 0.779);
+  }
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+.slider {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+.slider__video {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 500px;
+    margin-bottom: 15px;
+}
+.slider__video video {
+    width: 100%;
+    height: 500px;
+}
+.slider__navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider__navbar ul li {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.slider__navbar ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
